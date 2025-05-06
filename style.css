@@ -1,0 +1,93 @@
+*{
+    font-family: Roboto, 'Times New Roman', Times, serif;
+}
+html,body{
+    background-color:rgb(172, 189, 186);
+    height:100%;
+    width:100%;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items:center;
+}
+#setup{
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items:center;
+}
+#setup input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #666;
+    border-radius: 8px;
+    margin: 0.5rem;
+    width: 200px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#setup input:focus {
+    border-color: rgb(101, 90, 124);
+    box-shadow: 0 0 5px rgba(101, 90, 124, 0.5);
+}
+#startBtn,
+#restartBtn {
+    background-color: rgb(112, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#startBtn:hover,
+#restartBtn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    width:fit-content;
+    margin-bottom: 10px;
+    gap: 2px;
+    background-color: black;
+    border: 2px double black;
+  }
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+}
+.gameArea{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#score{
+    font-size:1rem;
+    margin-bottom: 10px;
+    text-align:center;
+}
+#status {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#restartBtn {
+    background-color: rgb(101, 90, 124);
+}
